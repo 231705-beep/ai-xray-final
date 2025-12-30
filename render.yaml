@@ -20,9 +20,13 @@ services:
       - key: JWT_SECRET
         generateValue: true
       - key: EMAIL_USER
-        sync: false # Set this manually in Render Dashboard
+        sync: false
       - key: EMAIL_PASS
-        sync: false # Set this manually in Render Dashboard
+        sync: false
+      - key: EMAIL_HOST
+        value: "smtp.gmail.com"
+      - key: EMAIL_PORT
+        value: "587"
       - key: EMAIL_FROM
         value: "AI X-Ray Health <khattaksaad042@gmail.com>"
 
