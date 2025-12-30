@@ -1,11 +1,10 @@
-services:
-  # Database Service
-  - type: database
-    name: ai-xray-db
+databases:
+  - name: ai-xray-db
     databaseName: ai_xray_health
     user: ai_backend_user
     plan: free
 
+services:
   # Backend Web Service
   - type: web
     name: ai-xray-backend
