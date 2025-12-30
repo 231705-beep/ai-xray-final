@@ -10,7 +10,7 @@ services:
     name: ai-xray-backend
     runtime: docker
     dockerContext: ./backend
-    dockerfile: Dockerfile
+    dockerfilePath: ./backend/Dockerfile
     plan: free
     envVars:
       - key: DATABASE_URL
@@ -31,7 +31,7 @@ services:
     name: ai-xray-frontend
     runtime: docker
     dockerContext: ./frontend
-    dockerfile: Dockerfile
+    dockerfilePath: ./frontend/Dockerfile
     plan: free
     envVars:
       - key: VITE_API_URL
